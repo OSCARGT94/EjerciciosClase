@@ -14,8 +14,8 @@ public class Ejercicio2_2 : MonoBehaviour
     {
         resultadoSumas = vida + exp;
         resultadoSumas = vida - exp;
-        Debug.Log(resultadoSumas);
-        Debug.Log(resultadoRestas);
+        Debug.Log("resultado de sumar es " + resultadoSumas );
+        Debug.Log("resultado de restar es " + resultadoRestas );
         
 
     }
