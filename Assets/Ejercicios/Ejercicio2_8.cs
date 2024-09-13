@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Ejercicio2_8 : MonoBehaviour
 {
-    //float venenoTurno1 = 3.6f, venenoTurno2 = 7.2f, venenoTurno3 = 10.8f, venenoTurno4 = 14.4f,venenoTurno5 = 18f; dejo esto precalculado para ver que me cuadren los valores
+    //float venenoTurno1 = 3.6f, venenoTurno2 = 7.2f, venenoTurno3 = 10.8f, venenoTurno4 = 14.4f,venenoTurno5 = 18f;
+    //dejo esto precalculado para ver que me cuadren los valores
     float vidaInicial = 120;
     float vidaActual;
     float venenoTurno1 , venenoTurno2 , venenoTurno3 , venenoTurno4 ,venenoTurno5 ;

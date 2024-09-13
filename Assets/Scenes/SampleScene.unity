@@ -439,6 +439,8 @@ GameObject:
   - component: {fileID: 907940713}
   - component: {fileID: 907940715}
   - component: {fileID: 907940716}
+  - component: {fileID: 907940717}
+  - component: {fileID: 907940718}
   - component: {fileID: 907940709}
   - component: {fileID: 907940708}
   - component: {fileID: 907940707}
@@ -597,14 +599,41 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907940706}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fb3a9e41a2b75b4d88abde2728ef434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 10
-  longitud: 0
-  circunferencia: 40
+  radio: 20
+  longitudCircunferencia: 0
+  areaCircunferencia: 0
+--- !u!114 &907940717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907940706}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9712d43343f64ad46b24c82f9d9e77c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kmH: 72
+--- !u!114 &907940718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907940706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a12a58a768307b04c96cee2aa326b356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basee: 3
+  altura: 3
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
