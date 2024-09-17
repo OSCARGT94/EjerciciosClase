@@ -8,8 +8,8 @@ public class Ejercicio4_1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float resultadoAreacirculo = areacirculo();
-        Debug.Log("El resultado del area del circulo es ");
+        float resultadoAreacirculo = areacirculo(3,3.14f);
+        Debug.Log("El resultado del area del circulo es " + resultadoAreacirculo);
     }
 
     // Update is called once per frame
