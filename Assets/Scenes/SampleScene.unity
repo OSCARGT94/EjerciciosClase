@@ -989,6 +989,7 @@ GameObject:
   - component: {fileID: 2108260342}
   - component: {fileID: 2108260343}
   - component: {fileID: 2108260344}
+  - component: {fileID: 2108260345}
   - component: {fileID: 2108260340}
   - component: {fileID: 2108260339}
   - component: {fileID: 2108260338}
@@ -1120,13 +1121,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108260337}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37308594297b78445968e14cff07b08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moneda: euros
   cantidad: 500
+--- !u!114 &2108260345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108260337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d6ffab4a1ca9546b86438046ca1090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kmH: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
