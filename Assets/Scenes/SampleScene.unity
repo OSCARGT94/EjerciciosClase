@@ -1244,6 +1244,14 @@ GameObject:
   - component: {fileID: 1092935455}
   - component: {fileID: 1092935456}
   - component: {fileID: 1092935457}
+  - component: {fileID: 1092935458}
+  - component: {fileID: 1092935459}
+  - component: {fileID: 1092935460}
+  - component: {fileID: 1092935461}
+  - component: {fileID: 1092935462}
+  - component: {fileID: 1092935463}
+  - component: {fileID: 1092935464}
+  - component: {fileID: 1092935465}
   - component: {fileID: 1092935452}
   - component: {fileID: 1092935451}
   - component: {fileID: 1092935450}
@@ -1383,9 +1391,116 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092935449}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b7862bba43147041b3f8ea711c8b5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1092935458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092935449}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2fdb245ae9c2b4db914676eb2a6b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero1: 4
+  numero2: 5
+--- !u!114 &1092935459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092935449}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105f4d0e496fe93408ab28cf9bfa5532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero1: 6
+--- !u!114 &1092935460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092935449}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44498b6372776f4491b39dab4d9b43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero1: 12
+  numero2: 12
+--- !u!114 &1092935461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092935449}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e316ae6df0002714189942a222afc677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero1: 1
+  numero2: 18
+--- !u!114 &1092935462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092935449}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15dd277c25a59dc47b89d62d746bb7b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero1: 6
+--- !u!114 &1092935463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092935449}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c0a53de4aeeec4b812b564239d6ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero1: 1
+  numero2: 10
+--- !u!114 &1092935464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092935449}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a15a018b90a3c44997255cce66b759a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero1: 1
+--- !u!114 &1092935465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092935449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083284a97785b8c409a6e5ac8c3583ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1447290001
