@@ -11,6 +11,7 @@ public class Personaje : MonoBehaviour
     private float experiencia;
 
     public float Vida { get => vida; set => vida = value; }
+    public string Nombre { get => nombre; set => nombre = value; }
 
     // Que puede hacer mi personaje.
     // Funcionalidades.

@@ -391,6 +391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94bfb5593d3b2e640bdbc41b01df3fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  personaje1: {fileID: 211862872}
+  personaje2: {fileID: 445364543}
 --- !u!4 &462417118
 Transform:
   m_ObjectHideFlags: 0
@@ -1814,51 +1816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78bc471455105fc498486604136bd297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1694742310
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1694742312}
-  - component: {fileID: 1694742311}
-  m_Layer: 0
-  m_Name: CreadorPersonajes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1694742311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694742310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6856b754cf4aed04788d4338146e1a92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  link: {fileID: 211862872}
---- !u!4 &1694742312
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694742310}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0063305, y: -5.8289, z: 6.019081}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2108260337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,4 +2009,3 @@ SceneRoots:
   - {fileID: 1092935453}
   - {fileID: 211862873}
   - {fileID: 445364544}
-  - {fileID: 1694742312}
