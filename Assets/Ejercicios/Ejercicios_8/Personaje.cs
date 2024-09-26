@@ -8,25 +8,30 @@ public class Personaje : MonoBehaviour
     // Propiedades o atributos.
     private string nombre;
     private float vida;
-    private float danho;
-    private float velocidad;
+    private float experiencia;
 
     public float Vida { get => vida; set => vida = value; }
 
     // Que puede hacer mi personaje.
     // Funcionalidades.
+    void Start()
+    {
+        float calcularLvl = CalcularNivel(experiencia);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
     public void mover(float x, float y, float z)
     {
 
     }
 
-    void atacar()
+    float CalcularNivel(float exp)
     {
-
-    }
-
-    void saltar()
-    {
-
+        float LVL = exp / 1000;
+        return LVL;
     }
 }
