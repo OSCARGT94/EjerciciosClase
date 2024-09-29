@@ -14,10 +14,10 @@ public class Personaje : MonoBehaviour
     // Como se define mi personaje.
     // Propiedades o atributos.
     private string nombre;
-    private float vida;
+    private int vida;
     private float experiencia;
     float calcularLvl;
-    public float Vida { get => vida; set => vida = value; }
+    public int Vida { get => vida; set => vida = value; }
     public string Nombre { get => nombre; set => nombre = value; }
     public bool MiTurno { get => miTurno; set => miTurno = value; }
 
