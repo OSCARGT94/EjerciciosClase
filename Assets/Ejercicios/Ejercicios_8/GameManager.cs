@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     bool yaEjecutado = false;
-    [SerializeField] Personaje personaje1, personaje2;
+    [SerializeField] Personaje personaje1, enemigo;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,17 +21,22 @@ public class GameManager : MonoBehaviour
             personaje1.CalcularNivel(0);
         }
 
+
     }
     void prepararPersonajes()
     {
         personaje1.Nombre = "Pepe";
-        personaje2.Nombre = "Paco";
+        enemigo.Nombre = "Paco";
         personaje1.Vida = 100;
-        personaje2.Vida = 100;
+        enemigo.Vida = 100;
 
         yaEjecutado = true;
 
         Debug.Log("Nombre " + personaje1.Nombre + " vida " + personaje1.Vida);
-        Debug.Log("Nombre " + personaje2.Nombre + " vida " + personaje2.Vida);
+        Debug.Log("Nombre " + enemigo.Nombre + " vida " + enemigo.Vida);
+    }
+    public void FinDeTurno()
+    {
+        //Me he atascado en el 8.5, no se como hacer lo de la boleana.
     }
 }

@@ -10,6 +10,7 @@ public class Personaje : MonoBehaviour
     [SerializeField] KeyCode cura;
     [SerializeField] KeyCode ataque;
     [SerializeField] KeyCode recarga;
+    public bool miTurno;
     // Como se define mi personaje.
     // Propiedades o atributos.
     private string nombre;
@@ -18,6 +19,7 @@ public class Personaje : MonoBehaviour
     float calcularLvl;
     public float Vida { get => vida; set => vida = value; }
     public string Nombre { get => nombre; set => nombre = value; }
+    public bool MiTurno { get => miTurno; set => miTurno = value; }
 
     // Que puede hacer mi personaje.
     // Funcionalidades.
@@ -29,6 +31,8 @@ public class Personaje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if (Input.GetKeyDown(cura))
         {
             sistemaDeVida.RecibirCura(sistemaDeVida.CuraIntroducidad);
@@ -41,9 +45,6 @@ public class Personaje : MonoBehaviour
         {
             arma.RecargarArma();
         }
-    }
-    public void mover(float x, float y, float z)
-    {
 
     }
 
