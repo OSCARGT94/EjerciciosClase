@@ -21,20 +21,17 @@ public class GameManager : MonoBehaviour
             personaje1.CalcularNivel(0);
         }
 
-        void prepararPersonajes()
-        {
-            personaje1.Nombre = "Pepe";
-            personaje2.Nombre = "Paco";
-            personaje1.Vida = 100;
-            personaje2.Vida = 100;
+    }
+    void prepararPersonajes()
+    {
+        personaje1.Nombre = "Pepe";
+        personaje2.Nombre = "Paco";
+        personaje1.Vida = 100;
+        personaje2.Vida = 100;
 
-            yaEjecutado = true;
+        yaEjecutado = true;
 
-            Debug.Log("Nombre " + personaje1.Nombre + " vida " + personaje1.Vida);
-            Debug.Log("Nombre " + personaje2.Nombre + " vida " + personaje2.Vida);
-        }
-
-
-
+        Debug.Log("Nombre " + personaje1.Nombre + " vida " + personaje1.Vida);
+        Debug.Log("Nombre " + personaje2.Nombre + " vida " + personaje2.Vida);
     }
 }
