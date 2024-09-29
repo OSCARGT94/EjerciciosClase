@@ -7,6 +7,7 @@ public class Arma : MonoBehaviour
     [SerializeField] float danhoMinimo, danhoMaximo;
     [SerializeField] int CapacidadTotal;
     [SerializeField] bool automatica;
+    [SerializeField] SistemaDeVida sistemaDeVida;
     int municionActual;
     // Start is called before the first frame update
     void Start()
@@ -24,11 +25,17 @@ public class Arma : MonoBehaviour
         if (municionActual > 0)
         {
             municionActual -= 1;
+            Debug.Log("0");
+
+            sistemaDeVida.RecibirDanho(Random.Range(danhoMinimo, danhoMaximo));
 
         }
         else
         {
-            municionActual = 0;
+            
+            Debug.Log("-1");
+            Debug.Log("Reload");
+
         }
     }
     public void RecargarArma()
@@ -37,10 +44,12 @@ public class Arma : MonoBehaviour
         {
             municionActual = CapacidadTotal;
             Debug.Log("0");
+            Debug.Log("Recargaste " + CapacidadTotal + " tu municion vuelve a ser " + municionActual);
         }
         else
         {
-            Debug.Log("1");
+            Debug.Log("-1");
+            Debug.Log("Arma ya cargada.");
         }
     }
 

@@ -7,14 +7,18 @@ public class SistemaDeVida : MonoBehaviour
     [SerializeField] float vidaIncial;
     [SerializeField] float curaIntroducidad, danhoHecho;
     float vidaActual;
+
+    public float CuraIntroducidad { get => curaIntroducidad; set => curaIntroducidad = value; }
+
     // Start is called before the first frame update
     void Start()
     {
         vidaActual = vidaIncial;
-        vidaActual = RecibirCura(curaIntroducidad);
-        Debug.Log("Tu vida actual sumando poti es " + vidaActual);
-        vidaActual = RecibirDanho(danhoHecho);
-        Debug.Log("Tu vida actual restando daño es " + vidaActual);
+        Debug.Log("Tu vida actual es " + vidaActual);
+        //vidaActual = RecibirCura(curaIntroducidad);
+        //Debug.Log("Tu vida actual sumando poti es " + vidaActual);
+        //vidaActual = RecibirDanho(danhoHecho);
+        //Debug.Log("Tu vida actual restando daño es " + vidaActual);
     }
 
     // Update is called once per frame
@@ -22,34 +26,40 @@ public class SistemaDeVida : MonoBehaviour
     {
 
     }
-    float RecibirCura(float cantidad)
+    public float RecibirCura(float cantidad)
     {
         if (cantidad < 0)
         {
-            vidaActual = -1;
+            Debug.Log("-1");
+            Debug.Log("Tu vida actual es " + vidaActual);
         }
         else
         {
             vidaActual += cantidad;
+            Debug.Log("Tu vida actual es " + vidaActual);
         }
 
         return vidaActual;
     }
-    float RecibirDanho(float danho)
+    public void RecibirDanho(float danho)
     {
-        if (vidaActual < 0)
+        if (vidaActual > 0)
         {
-            vidaActual = -1;
-        }
-        else
-        {
+            Debug.Log("0");
+
             vidaActual -= danho;
             if (vidaActual <= 0)
             {
                 vidaActual = 0;
             }
+            Debug.Log("Tu vida actual es " + vidaActual);
+        }
+        else
+        {
+            Debug.Log("-1");
         }
 
-        return vidaActual;
+        //return vidaActual;
     }
+
 }

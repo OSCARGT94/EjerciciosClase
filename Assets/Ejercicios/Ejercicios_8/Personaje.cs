@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Personaje : MonoBehaviour
 {
+    [SerializeField] GameObject enemigo;
+    [SerializeField] Arma arma;
+    [SerializeField] SistemaDeVida sistemaDeVida;
+    [SerializeField] KeyCode cura;
+    [SerializeField] KeyCode ataque;
+    [SerializeField] KeyCode recarga;
     // Como se define mi personaje.
     // Propiedades o atributos.
     private string nombre;
@@ -23,7 +29,18 @@ public class Personaje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(cura))
+        {
+            sistemaDeVida.RecibirCura(sistemaDeVida.CuraIntroducidad);
+        }
+        if (Input.GetKeyDown(ataque))
+        {
+            arma.UtilizarArma();
+        }
+        if (Input.GetKeyDown(recarga))
+        {
+            arma.RecargarArma();
+        }
     }
     public void mover(float x, float y, float z)
     {
