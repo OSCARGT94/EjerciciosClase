@@ -12,8 +12,9 @@ public class SistemaDeVida : MonoBehaviour
     {
         vidaActual = vidaIncial;
         vidaActual = RecibirCura(curaIntroducidad);
-        Debug.Log("Tu vida actual es " + vidaActual);
-        RecibirDanho(danhoHecho);
+        Debug.Log("Tu vida actual sumando poti es " + vidaActual);
+        vidaActual = RecibirDanho(danhoHecho);
+        Debug.Log("Tu vida actual restando daño es " + vidaActual);
     }
 
     // Update is called once per frame
@@ -36,8 +37,19 @@ public class SistemaDeVida : MonoBehaviour
     }
     float RecibirDanho(float danho)
     {
+        if (vidaActual < 0)
+        {
+            vidaActual = -1;
+        }
+        else
+        {
+            vidaActual -= danho;
+            if (vidaActual <= 0)
+            {
+                vidaActual = 0;
+            }
+        }
 
-
-        return danho;
+        return vidaActual;
     }
 }
