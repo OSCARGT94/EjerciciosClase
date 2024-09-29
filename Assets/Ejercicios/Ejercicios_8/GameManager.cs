@@ -9,24 +9,32 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        yaEjecutado = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ( yaEjecutado == false && Input.GetKeyDown(KeyCode.Space))
+        if (yaEjecutado == false && Input.GetKeyDown(KeyCode.Space))
         {
             prepararPersonajes();
+            personaje1.CalcularNivel(0);
         }
-    }
-    void prepararPersonajes()
-    {
-        personaje1.Nombre = "Pepe";
-        personaje2.Nombre = "Paco";
-        personaje1.Vida = 100;
-        personaje2.Vida = 100;
 
-        yaEjecutado = true;
+        void prepararPersonajes()
+        {
+            personaje1.Nombre = "Pepe";
+            personaje2.Nombre = "Paco";
+            personaje1.Vida = 100;
+            personaje2.Vida = 100;
+
+            yaEjecutado = true;
+
+            Debug.Log("Nombre " + personaje1.Nombre + " vida " + personaje1.Vida);
+            Debug.Log("Nombre " + personaje2.Nombre + " vida " + personaje2.Vida);
+        }
+
+
+
     }
 }
